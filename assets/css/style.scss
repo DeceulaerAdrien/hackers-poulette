@@ -1,20 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Bellota:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap'); //    font-family: 'Bellota', cursive;
 
 body{
+    font-family: 'Bellota', cursive;
     margin: 0;
     padding: 0;
+    background-color: #303030;
 };
 
 .navbar{
+
     display: flex;
     position: absolute;
-    align-content: center;
-    width: 100%;
+    align-items: center;
+    width: 100vw;
     height: 6em;
     background: #0D8187;
-    color: black;
+    color: #ffffff;
+    justify-content: space-between;
 
     h1{
-        margin: 0
+        margin-left: 1em;
+        font-weight: bolder;
     }
-}
+
+    ul {
+        display: inline;
+        list-style-type: none;
+        margin-right: 1em;
+        padding: 0;
+        li{
+            text-align: center
+        }
+    }
+
+};
