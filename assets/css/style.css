@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Bellota:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
 body {
   font-family: 'Bellota', cursive;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   background-color: #303030;
@@ -8,19 +9,18 @@ body {
 
 .navbar {
   display: flex;
-  position: absolute;
   align-items: center;
   width: 100vw;
   height: 6em;
   background: #0D8187;
   color: #ffffff;
   justify-content: space-between;
-  font-size: large;
+  font-size: small;
 }
 
 .navbar h1 {
   margin-left: 1em;
-  font-weight: bolder;
+  font-size: small;
 }
 
 .navbar ul {
@@ -29,13 +29,57 @@ body {
   padding: 0;
 }
 
+.navbar ul :last-child {
+  border: none;
+}
+
 .navbar ul li {
   display: inline;
-  margin: 1em;
+  border-right: 1px solid black;
+  padding-right: 1em;
+  padding-left: 1em;
 }
 
 .navbar ul li a {
   color: #ffffff;
-  font-size: large;
+  font-size: small;
   text-decoration: none;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+}
+
+.logo img {
+  width: 20em;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 1em;
+}
+
+.form .form-name {
+  width: 90%;
+  height: 1em;
+  background-color: #0D8187;
+}
+
+@media (min-width: 600px) {
+  .navbar {
+    font-size: large;
+  }
+  .navbar h1 {
+    font-size: large;
+  }
+  .navbar a {
+    font-size: large;
+  }
+  .logo img {
+    width: 30em;
+  }
 }

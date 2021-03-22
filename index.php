@@ -21,8 +21,13 @@
         </nav>
     </header>
     <main>
-        <div classe="logo">
-            <img src="assets/image/hackers-poulette.png" alt="">
+        <div class="logo">
+            <img src="assets/image/hackers-poulette-logo-neg.png" alt="logo de l'entreprise Hackers-poulette">
+        </div>
+        <div class="form">
+            <div class="form-name">
+                
+            </div>
         </div>
     </main>
 </body>
