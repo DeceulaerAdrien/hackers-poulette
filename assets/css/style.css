@@ -23,12 +23,12 @@ body {
 }
 
 .navbar ul {
-  display: inline;
   list-style-type: none;
   margin-right: 1em;
   padding: 0;
 }
 
 .navbar ul li {
-  text-align: center;
+  display: inline;
+  margin: 1em;
 }

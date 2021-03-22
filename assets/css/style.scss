@@ -21,16 +21,19 @@ body{
     h1{
         margin-left: 1em;
         font-weight: bolder;
-    }
+    };
 
     ul {
-        display: inline;
+
         list-style-type: none;
         margin-right: 1em;
         padding: 0;
-        li{
-            text-align: center
-        }
-    }
+
+        li{ 
+            display: inline;
+            margin: 1em;
+        };
+
+    };
 
 };
