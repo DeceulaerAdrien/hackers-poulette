@@ -1,1 +1,4 @@
-/* No CSS */
+@import url("https://fonts.googleapis.com/css2?family=Bellota:wght@300&display=swap");
+html {
+  font-family: 'Bellota', cursive;
+}

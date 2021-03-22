@@ -11,7 +11,11 @@
 </head>
 <body>
     <header></header>
-    <main></main>
+    <main>
+    <form action="" method="post">
+        <label for="fname">Firstname: <input type="text"></label>
+    </form>
+    </main>
     <footer></footer>
 </body>
 <!-- Bootstrap JS-->
