@@ -12,9 +12,9 @@
 <body>
     <header></header>
     <main>
-    <form action="" method="post">
-        <label for="fname">Firstname: <input type="text"></label>
-    </form>
+        <form action="" method="post">
+            <label for="fname" class="name">Firstname: <input type="text" name="fname" id="name"></label>
+        </form>
     </main>
     <footer></footer>
 </body>
