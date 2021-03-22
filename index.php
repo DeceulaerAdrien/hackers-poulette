@@ -10,7 +10,9 @@
 <body>
     <header>
         <nav>
-            <div class="navbar"></div>
+            <div class="navbar">
+                <h1>Hacker-poulette</h1>
+            </div>
         </nav>
     </header>
 </body>
