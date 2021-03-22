@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Bellota:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap'); //    font-family: 'Bellota', cursive;
 
-.titre{
-    font-family: 'Bellota', cursive;
+html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
     color: white;
+    width: 100%;
+    background-color: blue;
 }
