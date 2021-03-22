@@ -17,6 +17,7 @@ body{
     background: #0D8187;
     color: #ffffff;
     justify-content: space-between;
+    font-size: large;
 
     h1{
         margin-left: 1em;
@@ -32,6 +33,11 @@ body{
         li{ 
             display: inline;
             margin: 1em;
+            a{
+                color: #ffffff;
+                font-size: large;
+                text-decoration: none                
+            }
         };
 
     };

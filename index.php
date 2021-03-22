@@ -13,13 +13,18 @@
             <div class="navbar">
                 <h1>Hacker-poulette</h1>
                 <ul>
-                    <li>Home</li>
-                    <li>Products</li>
-                    <li>Contact</li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Contact</a></li>
                 </ul>
             </div>
         </nav>
     </header>
+    <main>
+        <div classe="logo">
+            <img src="assets/image/hackers-poulette.png" alt="">
+        </div>
+    </main>
 </body>
 <script src="./assets/script/script.js"></script>
 </html>
