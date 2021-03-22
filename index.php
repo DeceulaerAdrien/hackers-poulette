@@ -10,13 +10,7 @@
     <title>Hackers-poulette</title>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <nav class="navbar" id="navbar">
-                
-            </nav>
-        </div>
-    </header>
+    <header></header>
     <main></main>
     <footer></footer>
 </body>
