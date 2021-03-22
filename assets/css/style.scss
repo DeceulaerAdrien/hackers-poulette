@@ -63,14 +63,13 @@ body{
         width: 20em;
     };
 };
-.form{
+.blockform{
     display: flex;
     justify-content: center;
     width: 100vw;
-    height: 1em;
-    .form-name{
+    .form{
         width: 90%;
-        height: 1em;
+        height: 10vh;
         background-color: #0D8187;
     }
 }

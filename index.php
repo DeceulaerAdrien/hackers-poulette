@@ -24,9 +24,9 @@
         <div class="logo">
             <img src="assets/image/hackers-poulette-logo-neg.png" alt="logo de l'entreprise Hackers-poulette">
         </div>
-        <div class="form">
-            <div class="form-name">
-                
+        <div class="blockform">
+            <div class="form">
+                <form action="" method="post"></form>
             </div>
         </div>
     </main>
