@@ -41,21 +41,42 @@
                             print_r($firstname);
                         };
                     ?>
-
                     <div class="lname">
                         <label for="lastname">Lastname: </label><br>
-                        <input type="text" name="lastname" id="lastname">
+                        <input type="text" name="lastname" id="lastname" value="<?php echo $_POST["lastname"]; ?>">
                     </div>
+                    <!-- PhP lastname -->
+                    <?php
+                        if (isset($_POST["lastname"])) {
+                            $lastname = $_POST["lastname"];
+                            print_r($lastname);
+                        };
+                    ?>
                     </div>
                     <div class="gender">
                         <label for="gender">Gender: </label><br>
                         <input type="radio" name="gender" id="man" value="man"><label for="man">Man</label><br>
                         <input type="radio" name="gender" id="woman" value="woman"><label for="woman">Woman</label> <br>
                     </div>
+                    <!-- PhP gender -->
+                    <?php
+                        if (isset($_POST["gender"])) {
+                            $gender = $_POST["gender"];
+                            print_r($gender);
+                        };
+                    ?>
                     <div class="email">
                         <label for="email">Email: </label><br>
                         <input type="email" name="email" id="email">
                     </div>
+                    <!-- PhP email -->
+                    <?php
+                        if (isset($_POST["email"])) {
+                            $email = $_POST["email"];
+                            print_r($email);
+                        };
+                    ?>
+
                     <div class="grpform">
                     <div class="country">
                         <label for="country">Country: </label><br>
