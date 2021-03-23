@@ -10,7 +10,7 @@ body{
     flex-direction: column;
     box-sizing: border-box;
 };
-//header
+
 header{
     .navbar{
 
@@ -53,8 +53,7 @@ header{
 
     };
 };
-//fin de l'header
-//debut du main
+
 main{
     font-size: small;
     .logo{
@@ -92,8 +91,7 @@ main{
         };
     };
 };
-//fin du main
-//debut du footer
+
 footer{
     font-size: small;
     .navbar{
@@ -117,33 +115,26 @@ footer{
         color: #ffffff
     };
 };
-//fin du footer
 
 //desktop
 @media(min-width: 600px){
+
     header{
         .navbar{
-    
             font-size: large;
-    
             h1{
                 font-size: larger;
             };
-    
             ul {
-    
                 li{ 
-               
                     a{
                         font-size: large;
                     };
-    
                 };
-            
             };
-    
         };
     };
+
     main{
         font-size: large;
         .logo{    
