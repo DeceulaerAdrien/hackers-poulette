@@ -10,6 +10,9 @@ body{
     flex-direction: column;
     box-sizing: border-box;
 };
+.message{
+    resize: none;
+}
 //header
 header{
     .navbar{
@@ -108,3 +111,45 @@ footer{
     };
 };
 //fin du footer
+
+@media(min-width: 600px){
+    header{
+        .navbar{
+    
+            font-size: large;
+    
+            h1{
+                font-size: larger;
+            };
+    
+            ul {
+    
+                li{ 
+               
+                    a{
+                        font-size: large;
+                    };
+    
+                };
+            
+            };
+    
+        };
+    };
+    main{
+        font-size: large;
+        .logo{    
+            img{
+                width: 35em;
+            };
+        };
+        .blockform{
+ 
+            .form{
+                flex-direction: row
+            };
+        };
+    };
+    
+};
+

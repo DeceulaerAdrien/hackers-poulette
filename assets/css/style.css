@@ -10,6 +10,10 @@ body {
   box-sizing: border-box;
 }
 
+.message {
+  resize: none;
+}
+
 header .navbar {
   display: flex;
   align-items: center;
@@ -105,4 +109,25 @@ footer .navbar ul li {
 footer .fab {
   margin-left: 0.5em;
   color: #ffffff;
+}
+
+@media (min-width: 600px) {
+  header .navbar {
+    font-size: large;
+  }
+  header .navbar h1 {
+    font-size: larger;
+  }
+  header .navbar ul li a {
+    font-size: large;
+  }
+  main {
+    font-size: large;
+  }
+  main .logo img {
+    width: 35em;
+  }
+  main .blockform .form {
+    flex-direction: row;
+  }
 }

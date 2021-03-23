@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Hacker-poulette page de contact,formation php Becode">
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="https://kit.fontawesome.com/150ae06f6f.js" crossorigin="anonymous"></script>
     <title>Hackers-poulette</title>
@@ -38,8 +39,8 @@
                     </div>
                     <div class="gender">
                         <label for="gender">Gender: </label><br>
-                        <input type="radio" name="gender" id="man" value="man"> Man <br>
-                        <input type="radio" name="gender" id="woman" value="woman"> Woman <br>
+                        <input type="radio" name="gender" id="man" value="man"><label for="man">Man</label><br>
+                        <input type="radio" name="gender" id="woman" value="woman"><label for="woman">Woman</label> <br>
                     </div>
                     <div class="email">
                         <label for="email">Email: </label><br>
@@ -69,8 +70,8 @@
                         </select>
                     </div>
                     <div class="message">
-                        <label for="message">Message</label><br>
-                        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                        <label for="message">Message: </label><br>
+                        <textarea name="message" id="message" cols="30" rows="10" class="message"></textarea>
                     </div>
                 </form>
             </div>
