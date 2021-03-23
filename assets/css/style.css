@@ -80,3 +80,7 @@ main .blockform .form {
 main .blockform .form div {
   padding: 0.4em;
 }
+
+footer {
+  font-size: small;
+}

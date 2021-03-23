@@ -60,7 +60,6 @@ header{
 main{
     font-size: small;
     .logo{
-
         display: flex;
         justify-content: center;
 
@@ -69,7 +68,6 @@ main{
         };
     };
     .blockform{
-
         display: flex;
         justify-content: center;
 
@@ -84,4 +82,10 @@ main{
         };
     };
 };
+//fin du main
+//debut du footer
+footer{
+    font-size: small;
 
+}
+//fin du footer
