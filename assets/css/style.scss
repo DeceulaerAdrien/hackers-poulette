@@ -10,9 +10,6 @@ body{
     flex-direction: column;
     box-sizing: border-box;
 };
-.message{
-    resize: none;
-}
 //header
 header{
     .navbar{
@@ -71,17 +68,27 @@ main{
     .blockform{
         display: flex;
         justify-content: center;
-
         .form{
             border-radius: 1em ;
             display: flex;
-            justify-content: center;    
             background-color: #0D8187;
             padding: 1em;
             margin: 0 1em 3em 1em;
             div{
                 padding: 0.4em
             }
+            .gender{
+                font-size: medium;
+                input{
+                    height: 3em;
+                    width: 3em;
+                }
+            };
+            .message{
+                textarea{
+                    resize: none
+                };
+            };            
         };
     };
 };
@@ -144,12 +151,28 @@ footer{
             };
         };
         .blockform{
- 
             .form{
-                flex-direction: row
+                .grpnames{
+                    display: flex;
+                };
+                .grpform{
+                    display: flex;
+                    select{
+                        width: 14em;
+                    };
+                };
+                .message{
+                    textarea{
+                        width: 29em;
+                    };
+                };
+                .email{
+                    input{
+                        width: 29em;
+                    };
+                };
             };
         };
     };
-    
 };
-
+//widht message 29em

@@ -10,10 +10,6 @@ body {
   box-sizing: border-box;
 }
 
-.message {
-  resize: none;
-}
-
 header .navbar {
   display: flex;
   align-items: center;
@@ -73,7 +69,6 @@ main .blockform {
 main .blockform .form {
   border-radius: 1em;
   display: flex;
-  justify-content: center;
   background-color: #0D8187;
   padding: 1em;
   margin: 0 1em 3em 1em;
@@ -81,6 +76,19 @@ main .blockform .form {
 
 main .blockform .form div {
   padding: 0.4em;
+}
+
+main .blockform .form .gender {
+  font-size: medium;
+}
+
+main .blockform .form .gender input {
+  height: 3em;
+  width: 3em;
+}
+
+main .blockform .form .message textarea {
+  resize: none;
 }
 
 footer {
@@ -127,7 +135,19 @@ footer .fab {
   main .logo img {
     width: 35em;
   }
-  main .blockform .form {
-    flex-direction: row;
+  main .blockform .form .grpnames {
+    display: flex;
+  }
+  main .blockform .form .grpform {
+    display: flex;
+  }
+  main .blockform .form .grpform select {
+    width: 14em;
+  }
+  main .blockform .form .message textarea {
+    width: 29em;
+  }
+  main .blockform .form .email input {
+    width: 29em;
   }
 }

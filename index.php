@@ -29,6 +29,7 @@
         <div class="blockform">
             <div class="form">
                 <form action="" method="post">
+                    <div class="grpnames">
                     <div class="fname">
                         <label for="firstname">Firstname: </label><br>
                         <input type="text" name="firstname" id="firstname">
@@ -36,6 +37,7 @@
                     <div class="lname">
                         <label for="lastname">Lastname: </label><br>
                         <input type="text" name="lastname" id="lastname">
+                    </div>
                     </div>
                     <div class="gender">
                         <label for="gender">Gender: </label><br>
@@ -46,6 +48,7 @@
                         <label for="email">Email: </label><br>
                         <input type="email" name="email" id="email">
                     </div>
+                    <div class="grpform">
                     <div class="country">
                         <label for="country">Country: </label><br>
                         <select name="country" id="country">
@@ -69,9 +72,10 @@
                             <option value="other">other</option>
                         </select>
                     </div>
+                    </div>
                     <div class="message">
                         <label for="message">Message: </label><br>
-                        <textarea name="message" id="message" cols="30" rows="10" class="message"></textarea>
+                        <textarea name="message" id="message" cols="30" rows="10"></textarea>
                     </div>
                 </form>
             </div>
