@@ -9,49 +9,49 @@ body{
 };
 
 //header
+header{
+    .navbar{
 
-.navbar{
-
-    display: flex;
-    align-items: center;
-    width: 100vw;
-    height: 6em;
-    background: #0D8187;
-    color: #ffffff;
-    justify-content: space-between;
-    font-size: small;
-
-    h1{
-        margin-left: 1em;
+        display: flex;
+        align-items: center;
+        width: 100vw;
+        height: 6em;
+        background: #0D8187;
+        color: #ffffff;
+        justify-content: space-between;
         font-size: small;
-    };
 
-    ul {
-
-        list-style-type: none;
-        margin-right: 1em;
-        padding: 0;
-        :last-child{
-            border: none;
-        }
-        li{ 
-            display: inline;
-            border-right: 1px solid black;
-            padding-right: 1em;
-            padding-left: 1em;
-            
-            a{
-                color: #ffffff;
-                font-size: small;
-                text-decoration: none                
-            }
-
+        h1{
+            margin-left: 1em;
+            font-size: small;
         };
+
+        ul {
+
+            list-style-type: none;
+            margin-right: 1em;
+            padding: 0;
+            :last-child{
+                border: none;
+            };
+            li{ 
+                display: inline;
+                border-right: 1px solid black;
+                padding-right: 1em;
+                padding-left: 1em;
+            
+                a{
+                    color: #ffffff;
+                    font-size: small;
+                    text-decoration: none                
+                };
+
+            };
         
+        };
+
     };
-
 };
-
 //fin de l'header
 //debut du main
 
@@ -69,12 +69,31 @@ body{
     width: 100vw;
     .form{
         width: 90%;
-        height: 50vh;
+        height: 10vh;
         background-color: #0D8187;
-    }
-}
+    };
+};
 
+//fin du main
+//debut du footer
+footer{
+    display: flex;
+    align-items: flex-end;
+    height: 100vh;
+    .navbar{
+        display: flex;
+        align-items: center;
+        width: 100vw;
+        height: 6em;
+        background: #0D8187;
+        color: #ffffff;
+        font-size: small;
+    };
+};
+
+//fin du footer
 //desktop
+
 @media(min-width: 600px){
     //header
     .navbar{
@@ -83,8 +102,8 @@ body{
             font-size: large;
         }
         a{
-            font-size: large
-        }
+            font-size: large;
+        };
     };
 
     //fin de l'header

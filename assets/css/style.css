@@ -7,7 +7,7 @@ body {
   background-color: #303030;
 }
 
-.navbar {
+header .navbar {
   display: flex;
   align-items: center;
   width: 100vw;
@@ -18,29 +18,29 @@ body {
   font-size: small;
 }
 
-.navbar h1 {
+header .navbar h1 {
   margin-left: 1em;
   font-size: small;
 }
 
-.navbar ul {
+header .navbar ul {
   list-style-type: none;
   margin-right: 1em;
   padding: 0;
 }
 
-.navbar ul :last-child {
+header .navbar ul :last-child {
   border: none;
 }
 
-.navbar ul li {
+header .navbar ul li {
   display: inline;
   border-right: 1px solid black;
   padding-right: 1em;
   padding-left: 1em;
 }
 
-.navbar ul li a {
+header .navbar ul li a {
   color: #ffffff;
   font-size: small;
   text-decoration: none;
@@ -64,8 +64,24 @@ body {
 
 .blockform .form {
   width: 90%;
-  height: 50vh;
+  height: 10vh;
   background-color: #0D8187;
+}
+
+footer {
+  display: flex;
+  align-items: flex-end;
+  height: 100vh;
+}
+
+footer .navbar {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 6em;
+  background: #0D8187;
+  color: #ffffff;
+  font-size: small;
 }
 
 @media (min-width: 600px) {

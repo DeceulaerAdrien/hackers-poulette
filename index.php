@@ -30,6 +30,13 @@
             </div>
         </div>
     </main>
+    <footer>
+        <nav>
+            <div class="navbar">
+                
+            </div>
+        </nav>
+    </footer>
 </body>
 <script src="./assets/script/script.js"></script>
 </html>
