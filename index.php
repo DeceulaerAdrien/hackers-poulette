@@ -62,9 +62,14 @@
                     <div class="subject">
                         <label for="subject">Subject: </label><br>
                         <select name="subject" id="subject">
+                            <option value="info">informations</option>
                             <option value="refund">refund</option>
-                            <option value=""></option>
+                            <option value="other">other</option>
                         </select>
+                    </div>
+                    <div class="message">
+                        <label for="message">Message</label><br>
+                        <textarea name="message" id="message" cols="30" rows="10"></textarea>
                     </div>
                 </form>
             </div>

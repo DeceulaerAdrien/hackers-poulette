@@ -76,3 +76,7 @@ main .blockform .form {
   width: 80%;
   background-color: #0D8187;
 }
+
+main .blockform .form div {
+  padding: 0.4em;
+}
