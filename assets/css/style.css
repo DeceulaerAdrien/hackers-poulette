@@ -140,6 +140,7 @@ footer .fab {
   }
   main .blockform .form .grpform {
     display: flex;
+    padding: 0;
   }
   main .blockform .form .grpform select {
     width: 14em;
