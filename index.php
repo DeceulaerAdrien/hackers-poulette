@@ -32,8 +32,11 @@
                     <div class="grpnames">
                     <div class="fname">
                         <label for="firstname">Firstname: </label><br>
-                        <input type="text" name="firstname" id="firstname" value="<?php echo $firstname; ?>">
+                        <input type="text" name="firstname" id="firstname" value="<?php echo $_POST["firstname"]; ?>">
                     </div>
+                    <?php 
+                        echo $_POST["firstname"];
+                    ?>
                     <div class="lname">
                         <label for="lastname">Lastname: </label><br>
                         <input type="text" name="lastname" id="lastname">
@@ -78,7 +81,7 @@
                         <textarea name="message" id="message" cols="30" rows="10"></textarea>
                     </div>
                     <div class="submitButton">                    
-                        <input type="button" value="submit" class="submit">
+                        <input type="submit" value="submit" class="submit">
                     </div>
                 </form>
             </div>
@@ -99,14 +102,3 @@
 <script src="./assets/script/script.js"></script>
 </html>
 
-<?php
-
-if (isset($_POST['firstname'])){
-    $firstname = $_POST['firstname'];
-}
-else {
-    $firstname = "";
-};
-
-
-?>
