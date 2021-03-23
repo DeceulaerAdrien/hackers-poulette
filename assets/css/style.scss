@@ -78,7 +78,7 @@ main{
                 padding: 0.4em
             }
             .gender{
-                font-size: medium;
+                font-size: 1.3em;
                 input{
                     height: 3em;
                     width: 3em;
@@ -119,6 +119,7 @@ footer{
 };
 //fin du footer
 
+//desktop
 @media(min-width: 600px){
     header{
         .navbar{
@@ -175,4 +176,3 @@ footer{
         };
     };
 };
-//widht message 29em
