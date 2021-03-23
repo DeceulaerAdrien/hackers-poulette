@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://kit.fontawesome.com/150ae06f6f.js" crossorigin="anonymous"></script>
     <title>Hackers-poulette</title>
 </head>
 <body>
@@ -76,7 +77,16 @@
         </div>
     </main>
     <footer>
- </footer>
+        <nav>
+            <div class="navbar">
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook fa-2x"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter fa-2x"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin-in fa-2x"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </footer>
 </body>
 <script src="./assets/script/script.js"></script>
 </html>

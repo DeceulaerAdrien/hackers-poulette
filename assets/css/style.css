@@ -10,10 +10,6 @@ body {
   box-sizing: border-box;
 }
 
-header {
-  font-size: small;
-}
-
 header .navbar {
   display: flex;
   align-items: center;
@@ -71,10 +67,12 @@ main .blockform {
 }
 
 main .blockform .form {
+  border-radius: 1em;
   display: flex;
   justify-content: center;
-  width: 80%;
   background-color: #0D8187;
+  padding: 1em;
+  margin: 0 1em 3em 1em;
 }
 
 main .blockform .form div {
@@ -83,4 +81,28 @@ main .blockform .form div {
 
 footer {
   font-size: small;
+}
+
+footer .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 6em;
+  background-color: #0D8187;
+  color: #ffffff;
+  font-size: small;
+}
+
+footer .navbar ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+footer .navbar ul li {
+  display: inline;
+}
+
+footer .fab {
+  margin-left: 0.5em;
+  color: #ffffff;
 }
