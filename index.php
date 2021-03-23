@@ -28,15 +28,20 @@
         </div>
         <div class="blockform">
             <div class="form">
-                <form action="test.php" method="POST">
+                <form action="index.php" method="POST">
                     <div class="grpnames">
                     <div class="fname">
                         <label for="firstname">Firstname: </label><br>
                         <input type="text" name="firstname" id="firstname" value="<?php echo $_POST["firstname"]; ?>">
                     </div>
+                    <!-- PhP firstname -->
                     <?php 
-                        echo $_POST["firstname"];
+                        if (isset($_POST["firstname"])){
+                            $firstname = $_POST["firstname"];
+                            print_r($firstname);
+                        };
                     ?>
+
                     <div class="lname">
                         <label for="lastname">Lastname: </label><br>
                         <input type="text" name="lastname" id="lastname">
