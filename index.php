@@ -28,12 +28,13 @@
         </div>
         <div class="blockform">
             <div class="form">
-                <form action="" method="post">
+                <form action="index.php" method="POST">
                     <div class="grpnames">
                     <div class="fname">
                         <label for="firstname">Firstname: </label><br>
-                        <input type="text" name="firstname" id="firstname">
+                        <input type="text" name="firstname" id="firstname" value="<?php echo $firstname; ?>">
                     </div>
+                    <?php echo($firstname);?>
                     <div class="lname">
                         <label for="lastname">Lastname: </label><br>
                         <input type="text" name="lastname" id="lastname">
@@ -98,3 +99,15 @@
 </body>
 <script src="./assets/script/script.js"></script>
 </html>
+
+<?php
+
+if (isset($_POST['firstname'])){
+    $firstname = $_POST['firstname'];
+}
+else {
+    $firstname = "";
+};
+
+
+?>
