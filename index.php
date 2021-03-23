@@ -24,7 +24,7 @@
     </header>
     <main>
         <div class="logo">
-            <img src="assets/image/hackers-poulette-logo-neg.png" alt="logo de l'entreprise Hackers-poulette">
+            <img src="assets/image/hackers-poulette-logo-neg.png" alt="logo de l'entreprise Hackers-poulette" draggable="false">
         </div>
         <div class="blockform">
             <div class="form">
@@ -77,7 +77,9 @@
                         <label for="message">Message: </label><br>
                         <textarea name="message" id="message" cols="30" rows="10"></textarea>
                     </div>
-                    <input type="button" value="submit" class="submit">
+                    <div class="submitButton">                    
+                        <input type="button" value="submit" class="submit">
+                    </div>
                 </form>
             </div>
         </div>

@@ -91,6 +91,19 @@ main .blockform .form .message textarea {
   resize: none;
 }
 
+main .blockform .form .submitButton {
+  display: flex;
+  justify-content: center;
+}
+
+main .blockform .form .submitButton input {
+  width: 10em;
+  height: 3em;
+  border-radius: 1em;
+  color: #ffffff;
+  background-color: #303030;
+}
+
 footer {
   font-size: small;
 }

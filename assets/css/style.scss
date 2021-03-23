@@ -87,7 +87,18 @@ main{
                 textarea{
                     resize: none
                 };
-            };            
+            }; 
+            .submitButton{
+                display: flex;
+                justify-content: center;
+                input{
+                    width: 10em;
+                    height: 3em;
+                    border-radius: 1em;
+                    color: #ffffff;
+                    background-color: #303030
+                };
+            }           
         };
     };
 };
