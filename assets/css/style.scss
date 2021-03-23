@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellota:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap'); //    font-family: 'Bellota', cursive;
+
+body{
+    font-family: 'Bellota', cursive;
+    margin: 0;
+    padding: 0;
+    background-color: #303030;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+};
+
+header{
+    .navbar{
+
+        display: flex;
+        align-items: center;
+        height: 6em;
+        background-color: #0D8187;
+        color: #ffffff;
+        justify-content: space-between;
+        font-size: small;
+
+        h1{
+            margin-left: 1em;
+            font-size: small;
+        };
+
+        ul {
+
+            list-style-type: none;
+            margin-right: 1em;
+            padding: 0;
+            :last-child{
+                border: none;
+            };
+            li{ 
+                display: inline;
+                border-right: 1px solid black;
+                padding-right: 1em;
+                padding-left: 1em;
+            
+                a{
+                    color: #ffffff;
+                    font-size: small;
+                    text-decoration: none                
+                };
+
+            };
+        
+        };
+
+    };
+};
+
+main{
+    font-size: small;
+    .logo{
+        display: flex;
+        justify-content: center;
+
+        img{
+            width: 20em;
+        };
+    };
+    .blockform{
+        display: flex;
+        justify-content: center;
+        .form{
+            border-radius: 1em ;
+            display: flex;
+            background-color: #0D8187;
+            padding: 1em;
+            margin: 0 1em 3em 1em;
+            div{
+                padding: 0.4em
+            }
+            .gender{
+                font-size: 1.3em;
+                input{
+                    height: 3em;
+                    width: 3em;
+                };
+            };
+            .message{
+                textarea{
+                    resize: none
+                };
+            }; 
+            .submitButton{
+                display: flex;
+                justify-content: center;
+                input{
+                    width: 10em;
+                    height: 3em;
+                    border-radius: 1em;
+                    color: #ffffff;
+                    background-color: #303030
+                };
+            }           
+        };
+    };
+};
+
+footer{
+    font-size: small;
+    .navbar{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 6em;
+        background-color: #0D8187;
+        color: #ffffff;
+        font-size: small;
+        ul{
+            padding: 0;
+            list-style-type: none;
+            li{
+                display: inline;
+            };
+        };
+    };
+    .fab{
+        margin-left: 0.5em;
+        color: #ffffff
+    };
+};
+
+//desktop
+@media(min-width: 600px){
+
+    header{
+        .navbar{
+            font-size: large;
+            h1{
+                font-size: larger;
+            };
+            ul {
+                li{ 
+                    a{
+                        font-size: large;
+                    };
+                };
+            };
+        };
+    };
+
+    main{
+        font-size: large;
+        .logo{    
+            img{
+                width: 35em;
+            };
+        };
+        .blockform{
+            .form{
+                .grpnames{
+                    display: flex;
+                };
+                .grpform{
+                    display: flex;
+                    padding: 0;
+                    select{
+                        width: 14em;
+                    };
+                };
+                .message{
+                    textarea{
+                        width: 29em;
+                    };
+                };
+                .email{
+                    input{
+                        width: 29em;
+                    };
+                };
+            };
+        };
+    };
+};

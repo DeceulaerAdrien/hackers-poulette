@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Bellota:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+body {
+  font-family: 'Bellota', cursive;
+  margin: 0;
+  padding: 0;
+  background-color: #303030;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+header .navbar {
+  display: flex;
+  align-items: center;
+  height: 6em;
+  background-color: #0D8187;
+  color: #ffffff;
+  justify-content: space-between;
+  font-size: small;
+}
+
+header .navbar h1 {
+  margin-left: 1em;
+  font-size: small;
+}
+
+header .navbar ul {
+  list-style-type: none;
+  margin-right: 1em;
+  padding: 0;
+}
+
+header .navbar ul :last-child {
+  border: none;
+}
+
+header .navbar ul li {
+  display: inline;
+  border-right: 1px solid black;
+  padding-right: 1em;
+  padding-left: 1em;
+}
+
+header .navbar ul li a {
+  color: #ffffff;
+  font-size: small;
+  text-decoration: none;
+}
+
+main {
+  font-size: small;
+}
+
+main .logo {
+  display: flex;
+  justify-content: center;
+}
+
+main .logo img {
+  width: 20em;
+}
+
+main .blockform {
+  display: flex;
+  justify-content: center;
+}
+
+main .blockform .form {
+  border-radius: 1em;
+  display: flex;
+  background-color: #0D8187;
+  padding: 1em;
+  margin: 0 1em 3em 1em;
+}
+
+main .blockform .form div {
+  padding: 0.4em;
+}
+
+main .blockform .form .gender {
+  font-size: 1.3em;
+}
+
+main .blockform .form .gender input {
+  height: 3em;
+  width: 3em;
+}
+
+main .blockform .form .message textarea {
+  resize: none;
+}
+
+main .blockform .form .submitButton {
+  display: flex;
+  justify-content: center;
+}
+
+main .blockform .form .submitButton input {
+  width: 10em;
+  height: 3em;
+  border-radius: 1em;
+  color: #ffffff;
+  background-color: #303030;
+}
+
+footer {
+  font-size: small;
+}
+
+footer .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 6em;
+  background-color: #0D8187;
+  color: #ffffff;
+  font-size: small;
+}
+
+footer .navbar ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+footer .navbar ul li {
+  display: inline;
+}
+
+footer .fab {
+  margin-left: 0.5em;
+  color: #ffffff;
+}
+
+@media (min-width: 600px) {
+  header .navbar {
+    font-size: large;
+  }
+  header .navbar h1 {
+    font-size: larger;
+  }
+  header .navbar ul li a {
+    font-size: large;
+  }
+  main {
+    font-size: large;
+  }
+  main .logo img {
+    width: 35em;
+  }
+  main .blockform .form .grpnames {
+    display: flex;
+  }
+  main .blockform .form .grpform {
+    display: flex;
+    padding: 0;
+  }
+  main .blockform .form .grpform select {
+    width: 14em;
+  }
+  main .blockform .form .message textarea {
+    width: 29em;
+  }
+  main .blockform .form .email input {
+    width: 29em;
+  }
+}
