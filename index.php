@@ -34,7 +34,6 @@
                         <label for="firstname">Firstname: </label><br>
                         <input type="text" name="firstname" id="firstname" value="<?php echo $firstname; ?>">
                     </div>
-                    <?php print_r($firstname);?>
                     <div class="lname">
                         <label for="lastname">Lastname: </label><br>
                         <input type="text" name="lastname" id="lastname">
