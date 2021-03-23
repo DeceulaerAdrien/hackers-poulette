@@ -26,17 +26,52 @@
         </div>
         <div class="blockform">
             <div class="form">
-                <form action="" method="post"></form>
+                <form action="" method="post">
+                    <div class="fname">
+                        <label for="firstname">Firstname: </label><br>
+                        <input type="text" name="firstname" id="firstname">
+                    </div>
+                    <div class="lname">
+                        <label for="lastname">Lastname: </label><br>
+                        <input type="text" name="lastname" id="lastname">
+                    </div>
+                    <div class="gender">
+                        <label for="gender">Gender: </label><br>
+                        <input type="radio" name="gender" id="man" value="man"> Man <br>
+                        <input type="radio" name="gender" id="woman" value="woman"> Woman <br>
+                    </div>
+                    <div class="email">
+                        <label for="email">Email: </label><br>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div class="country">
+                        <label for="country">Country: </label><br>
+                        <select name="country" id="country">
+                            <optgroup label="Europe">
+                                <option value="Belgium">Belgium</option>
+                                <option value="France">France</option>
+                                <option value="Netherlands">Netherlands</option>
+                            </optgroup>
+                            <optgroup label="Asie">
+                                <option value="China">China</option>
+                                <option value="Japan">Japan</option>
+                                <option value="SouthK">South Korea</option>
+                            </optgroup>                            
+                        </select>
+                    </div>
+                    <div class="subject">
+                        <label for="subject">Subject: </label><br>
+                        <select name="subject" id="subject">
+                            <option value="refund">refund</option>
+                            <option value=""></option>
+                        </select>
+                    </div>
+                </form>
             </div>
         </div>
     </main>
     <footer>
-        <nav>
-            <div class="navbar">
-                
-            </div>
-        </nav>
-    </footer>
+ </footer>
 </body>
 <script src="./assets/script/script.js"></script>
 </html>

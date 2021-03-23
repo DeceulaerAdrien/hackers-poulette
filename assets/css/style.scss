@@ -2,21 +2,24 @@
 
 body{
     font-family: 'Bellota', cursive;
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
     background-color: #303030;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
 };
 
 //header
 header{
+    font-size: small;
     .navbar{
 
         display: flex;
         align-items: center;
-        width: 100vw;
         height: 6em;
-        background: #0D8187;
+        background-color: #0D8187;
         color: #ffffff;
         justify-content: space-between;
         font-size: small;
@@ -54,62 +57,28 @@ header{
 };
 //fin de l'header
 //debut du main
+main{
+    font-size: small;
+    .logo{
 
-.logo{
-    display: flex;
-    justify-content: center;
-    width: 100vw;
-    img{
-        width: 20em;
-    };
-};
-.blockform{
-    display: flex;
-    justify-content: center;
-    width: 100vw;
-    .form{
-        width: 90%;
-        height: 10vh;
-        background-color: #0D8187;
-    };
-};
-
-//fin du main
-//debut du footer
-footer{
-    display: flex;
-    align-items: flex-end;
-    height: 100vh;
-    .navbar{
         display: flex;
-        align-items: center;
-        width: 100vw;
-        height: 6em;
-        background: #0D8187;
-        color: #ffffff;
-        font-size: small;
-    };
-};
+        justify-content: center;
 
-//fin du footer
-//desktop
-
-@media(min-width: 600px){
-    //header
-    .navbar{
-        font-size: large;
-        h1{
-            font-size: large;
-        }
-        a{
-            font-size: large;
+        img{
+            width: 20em;
         };
     };
+    .blockform{
 
-    //fin de l'header
-    //debut du main 
+        display: flex;
+        justify-content: center;
 
-    .logo img{
-        width: 30em;
+        .form{
+            display: flex;
+            justify-content: center;    
+            width: 80%;
+            background-color: #0D8187;
+        };
     };
 };
+

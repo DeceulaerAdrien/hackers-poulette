@@ -1,18 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Bellota:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
 body {
   font-family: 'Bellota', cursive;
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
   background-color: #303030;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+header {
+  font-size: small;
 }
 
 header .navbar {
   display: flex;
   align-items: center;
-  width: 100vw;
   height: 6em;
-  background: #0D8187;
+  background-color: #0D8187;
   color: #ffffff;
   justify-content: space-between;
   font-size: small;
@@ -46,55 +52,27 @@ header .navbar ul li a {
   text-decoration: none;
 }
 
-.logo {
-  display: flex;
-  justify-content: center;
-  width: 100vw;
-}
-
-.logo img {
-  width: 20em;
-}
-
-.blockform {
-  display: flex;
-  justify-content: center;
-  width: 100vw;
-}
-
-.blockform .form {
-  width: 90%;
-  height: 10vh;
-  background-color: #0D8187;
-}
-
-footer {
-  display: flex;
-  align-items: flex-end;
-  height: 100vh;
-}
-
-footer .navbar {
-  display: flex;
-  align-items: center;
-  width: 100vw;
-  height: 6em;
-  background: #0D8187;
-  color: #ffffff;
+main {
   font-size: small;
 }
 
-@media (min-width: 600px) {
-  .navbar {
-    font-size: large;
-  }
-  .navbar h1 {
-    font-size: large;
-  }
-  .navbar a {
-    font-size: large;
-  }
-  .logo img {
-    width: 30em;
-  }
+main .logo {
+  display: flex;
+  justify-content: center;
+}
+
+main .logo img {
+  width: 20em;
+}
+
+main .blockform {
+  display: flex;
+  justify-content: center;
+}
+
+main .blockform .form {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  background-color: #0D8187;
 }
