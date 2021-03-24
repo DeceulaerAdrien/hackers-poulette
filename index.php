@@ -85,7 +85,7 @@
                         <textarea name="message" id="message" cols="30" rows="10" value="<?php echo $message; ?>"></textarea>
                         <div class="error text-center"><?php echo $msg[4];?></div>
                     </div>
-                    <input id="website" name="website" type="text" value=""  />
+                    <input id="website" name="website" type="text" value="">
                     <div class="submitButton">                    
                         <input type="submit" name ="submit" value="submit" class="submit">
                     </div>
