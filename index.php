@@ -79,6 +79,7 @@
                         <label for="message">Message: </label><br>
                         <textarea name="message" id="message" cols="30" rows="10" value="<?php echo $message; ?>"></textarea>
                     </div>
+                    <input id="website" name="website" type="text" value=""  />
                     <div class="submitButton">                    
                         <input type="submit" name ="submit" value="submit" class="submit">
                     </div>
