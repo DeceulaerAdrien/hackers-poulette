@@ -17,7 +17,8 @@ Becode Formation, 03/2021
 JuniorDevelopper in formation for Becode.
 
 ## What does it look like ? :
-
+ ![](https://raw.githubusercontent.com/DeceulaerAdrien/hackers-poulette/main/assets/image/capture%20header%20poulette.png)
+ ![](https://raw.githubusercontent.com/DeceulaerAdrien/hackers-poulette/main/assets/image/capture%20main%20poulette.png) 
 ## Progression… :
 
 En cours.
