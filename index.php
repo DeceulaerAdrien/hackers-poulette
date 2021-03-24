@@ -32,24 +32,22 @@
                     <div class="grpnames">
                     <div class="fname">
                         <label for="firstname">Firstname: </label><br>
-                        <input type="text" name="firstname" id="firstname" value="<?php echo $_POST["firstname"]; ?>">
+                        <input type="text" name="firstname" id="firstname" value="<?php echo $firstname; ?>">
                     </div>
                     <!-- PhP firstname -->
                     <?php 
                         if (isset($_POST["firstname"])){
                             $firstname = $_POST["firstname"];
-                            print_r($firstname);
                         };
                     ?>
                     <div class="lname">
                         <label for="lastname">Lastname: </label><br>
-                        <input type="text" name="lastname" id="lastname" value="<?php echo $_POST["lastname"]; ?>">
+                        <input type="text" name="lastname" id="lastname" value="<?php echo $lastname; ?>">
                     </div>
                     <!-- PhP lastname -->
                     <?php
                         if (isset($_POST["lastname"])) {
                             $lastname = $_POST["lastname"];
-                            print_r($lastname);
                         };
                     ?>
                     </div>
@@ -62,18 +60,16 @@
                     <?php
                         if (isset($_POST["gender"])) {
                             $gender = $_POST["gender"];
-                            print_r($gender);
                         };
                     ?>
                     <div class="email">
                         <label for="email">Email: </label><br>
-                        <input type="email" name="email" id="email">
+                        <input type="email" name="email" id="email" value="<?php echo $email; ?>">
                     </div>
                     <!-- PhP email -->
                     <?php
                         if (isset($_POST["email"])) {
                             $email = $_POST["email"];
-                            print_r($email);
                         };
                     ?>
 
@@ -93,6 +89,11 @@
                             </optgroup>                            
                         </select>
                     </div>
+                    <?php
+                        if (isset($_POST["country"])) {
+                            $country = $_POST["country"];
+                        };
+                    ?>
                     <div class="subject">
                         <label for="subject">Subject: </label><br>
                         <select name="subject" id="subject">
@@ -101,11 +102,23 @@
                             <option value="other">other</option>
                         </select>
                     </div>
+                    <?php
+                        if (isset($_POST["subject"])) {
+                            $subject = $_POST["subject"];
+                        };
+                    ?>
                     </div>
                     <div class="message">
                         <label for="message">Message: </label><br>
-                        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                        <textarea name="message" id="message" cols="30" rows="10" value="<?php echo $message; ?>"></textarea>
                     </div>
+                    <!-- PhP message -->
+                    <?php
+                        if (isset($_POST["message"])) {
+                            $message = $_POST["message"];
+                        };
+                    ?>
+
                     <div class="submitButton">                    
                         <input type="submit" value="submit" class="submit">
                     </div>
@@ -128,3 +141,8 @@
 <script src="./assets/script/script.js"></script>
 </html>
 
+<?php
+
+
+
+?>
