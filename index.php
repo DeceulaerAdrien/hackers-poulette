@@ -1,3 +1,5 @@
+<?php include 'assets/validation.php';?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,15 +30,15 @@
         </div>
         <div class="blockform">
             <div class="form">
-                <form action="" method="post">
+                <form action="index.php" method="POST">
                     <div class="grpnames">
                     <div class="fname">
                         <label for="firstname">Firstname: </label><br>
-                        <input type="text" name="firstname" id="firstname">
+                        <input type="text" name="firstname" id="firstname" value="<?php echo $firstname; ?>">
                     </div>
                     <div class="lname">
                         <label for="lastname">Lastname: </label><br>
-                        <input type="text" name="lastname" id="lastname">
+                        <input type="text" name="lastname" id="lastname" value="<?php echo $lastname; ?>">
                     </div>
                     </div>
                     <div class="gender">
@@ -46,7 +48,7 @@
                     </div>
                     <div class="email">
                         <label for="email">Email: </label><br>
-                        <input type="email" name="email" id="email">
+                        <input type="email" name="email" id="email" value="<?php echo $email; ?>">
                     </div>
                     <div class="grpform">
                     <div class="country">
@@ -75,10 +77,10 @@
                     </div>
                     <div class="message">
                         <label for="message">Message: </label><br>
-                        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                        <textarea name="message" id="message" cols="30" rows="10" value="<?php echo $message; ?>"></textarea>
                     </div>
                     <div class="submitButton">                    
-                        <input type="button" value="submit" class="submit">
+                        <input type="submit" name ="submit" value="submit" class="submit">
                     </div>
                 </form>
             </div>
