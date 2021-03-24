@@ -65,7 +65,7 @@
         //Content
         $mail->isHTML(true);                                  //Set email format to HTML
         $mail->Subject = 'hacker poulette';
-        $mail->Body    = "Dear $firstname<br> thanks for your feedback.<br> we treat your demand as soon as possible";
+        $mail->Body    = "Dear $firstname<br> thanks for your feedback.<br> we treat your demand as soon as possible<br><br> Firstname: $firstname <br> lastname: $lastname <br> Gender: $gender <br> Email: $email <br> Country: $country <br> Subject: $subject <br> Message: $message";
         //$mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
         $mail->send();
