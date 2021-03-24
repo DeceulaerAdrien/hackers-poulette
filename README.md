@@ -40,6 +40,6 @@ Exercice for PhP and form skills
 
 ## Trello,Deploy, ... 
 
-[Trello](https://trello.com/b/c6lRb3Cu/hacker-poulette)
+[Trello](https://trello.com/b/c6lRb3Cu/hacker-poulette)<br>
 [Deploy on Heroku](https://still-fortress-60721.herokuapp.com/index.php)
 
