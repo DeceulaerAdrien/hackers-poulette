@@ -1,4 +1,4 @@
-<?php include 'mail.php';?>
+<?php include 'validation.php';?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -80,7 +80,7 @@
                         <textarea name="message" id="message" cols="30" rows="10" value="<?php echo $message; ?>"></textarea>
                     </div>
                     <div class="submitButton">                    
-                        <input type="submit" value="submit" class="submit">
+                        <input type="submit" name ="submit" value="submit" class="submit">
                     </div>
                 </form>
             </div>

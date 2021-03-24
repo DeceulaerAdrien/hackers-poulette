@@ -1,13 +1,11 @@
 <?php 
     if (isset($_POST["submit"])){
 
-        $firstname = $_POST["firstname"];
-        $lastname = $_POST["lastname"];
-        $gender = $_POST["gender"];
-        $email = $_POST["email"];
-        $country = $_POST["country"];
-        $subject = $_POST["subject"];
-        $message = $_POST["message"];
-        
+        $firstname = filter_var($_POST['firstname'], FILTER_SANITIZE_STRING);
+        print_r($firstname);
+        $lastname= filter_var($_POST['lastname'],FILTER_SANITIZE_STRING);
+        print_r($lastname);
+        $validate_field = true;
+
     };
 ?>
