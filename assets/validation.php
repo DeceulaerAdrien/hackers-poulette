@@ -3,6 +3,8 @@
     use PHPMailer\PHPMailer\PHPMailer;
     use PHPMailer\PHPMailer\SMTP;
     use PHPMailer\PHPMailer\Exception;
+    $msg = ["", "", "", "", ""];
+
     if (isset($_POST["submit"])){
 
         $firstname = filter_var($_POST['firstname'], FILTER_SANITIZE_STRING);
@@ -15,9 +17,30 @@
 
         $validates_fields = true;
 
-        if (filter_var($email, FILTER_VALIDATE_EMAIL) === false){
+        if (filter_var($email, FILTER_VALIDATE_EMAIL) === false || empty($email)){
             $validates_fields = false;
+            $msg[3]= "Your email is not correct.";
         };
+        if (empty($firstname)) {
+            $validates_fields = false;
+            $msg[0] = "Your first name is not correct.";
+        };
+        if (empty($lastname)) {
+            $validates_fields = false;
+            $msg[1] = "Your last name is not correct.";
+        }
+        if (empty($message)) {
+            $validates_fields = false;
+            $msg[4]= "Your message is not filled in.";
+
+        }
+        if ((isset($gender)) && ($gender !== null)) {
+            $gender1 = ($gender == "man") ? "checked" : "";
+            $gender2 = ($gender == "woman") ? "checked" : "";
+            } else {
+                $validates_fields = false;
+                $msg[2] = "The gender field is not filled in.";
+                }
 
         //var_dump($validates_fields);
 
@@ -27,15 +50,14 @@
 
     try {
         //Server settings
-        //$mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
-        $mail->isSMTP();                                            //Send using SMTP
-        $mail->Host       = 'smtp-mail.outlook.com';                     //Set the SMTP server to send through
-        $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-        $mail->Username   = 'adrien-test-code@outlook.com';                     //SMTP username
-        $mail->Password   = 'adrien1997';                               //SMTP password
-        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         //Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
-        $mail->Port       = 587;                                    //TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
-
+        //$mail->SMTPDebug = SMTP::DEBUG_SERVER;                      
+        $mail->isSMTP();                                            
+        $mail->Host       = 'smtp-mail.outlook.com';                     
+        $mail->SMTPAuth   = true;                                   
+        $mail->Username   = 'adrien-test-code@outlook.com';                     
+        $mail->Password   = 'adrien1997';                               
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         
+        $mail->Port       = 587;                                    
         //Recipients
         $mail->setFrom('adrien-test-code@outlook.com');
         $mail->addAddress($email,"$firstname $lastname");     //Add a recipient
@@ -43,14 +65,15 @@
         //Content
         $mail->isHTML(true);                                  //Set email format to HTML
         $mail->Subject = 'hacker poulette';
-        $mail->Body    = 'thanks for your feedback,';
+        $mail->Body    = "Dear $firstname<br> thanks for your feedback.<br> we treat your demand as soon as possible<br><br> Firstname: $firstname <br> lastname: $lastname <br> Gender: $gender <br> Email: $email <br> Country: $country <br> Subject: $subject <br> Message: $message";
         //$mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
         $mail->send();
-        echo 'Message has been sent';
+        
+        //echo 'Message has been sent';
     } catch (Exception $e) {
         echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
     }
-            };
-        };    
+    };
+};    
 ?>

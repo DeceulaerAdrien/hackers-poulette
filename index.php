@@ -35,20 +35,25 @@
                     <div class="fname">
                         <label for="firstname">Firstname: </label><br>
                         <input type="text" name="firstname" id="firstname" value="<?php echo $firstname; ?>">
+                        <div class="error text-center"><?php echo $msg[0];?></div>
                     </div>
                     <div class="lname">
                         <label for="lastname">Lastname: </label><br>
                         <input type="text" name="lastname" id="lastname" value="<?php echo $lastname; ?>">
+                        <div class="error text-center"><?php echo $msg[1];?></div>
                     </div>
                     </div>
                     <div class="gender">
                         <label for="gender">Gender: </label><br>
                         <input type="radio" name="gender" id="man" value="man"><label for="man">Man</label><br>
                         <input type="radio" name="gender" id="woman" value="woman"><label for="woman">Woman</label> <br>
+                        <div class="error text-center"><?php echo $msg[2];?></div>
+
                     </div>
                     <div class="email">
                         <label for="email">Email: </label><br>
                         <input type="email" name="email" id="email" value="<?php echo $email; ?>">
+                        <div class="error text-center"><?php echo $msg[3];?></div>
                     </div>
                     <div class="grpform">
                     <div class="country">
@@ -69,16 +74,18 @@
                     <div class="subject">
                         <label for="subject">Subject: </label><br>
                         <select name="subject" id="subject">
+                            <option value="other">other</option>
                             <option value="info">informations</option>
                             <option value="refund">refund</option>
-                            <option value="other">other</option>
                         </select>
                     </div>
                     </div>
                     <div class="message">
                         <label for="message">Message: </label><br>
                         <textarea name="message" id="message" cols="30" rows="10" value="<?php echo $message; ?>"></textarea>
+                        <div class="error text-center"><?php echo $msg[4];?></div>
                     </div>
+                    <input id="website" name="website" type="text" value=""  />
                     <div class="submitButton">                    
                         <input type="submit" name ="submit" value="submit" class="submit">
                     </div>
