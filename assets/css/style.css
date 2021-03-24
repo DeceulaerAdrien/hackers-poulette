@@ -101,6 +101,7 @@ main .blockform .form .submitButton {
 }
 
 main .blockform .form .submitButton input {
+  font-family: 'Bellota', cursive;
   width: 10em;
   height: 3em;
   border-radius: 1em;
