@@ -3,6 +3,8 @@
     use PHPMailer\PHPMailer\PHPMailer;
     use PHPMailer\PHPMailer\SMTP;
     use PHPMailer\PHPMailer\Exception;
+    $msg = ["", "", "", "", ""];
+
     if (isset($_POST["submit"])){
 
         $firstname = filter_var($_POST['firstname'], FILTER_SANITIZE_STRING);
@@ -15,11 +17,32 @@
 
         $validates_fields = true;
 
-        if (filter_var($email, FILTER_VALIDATE_EMAIL) === false){
+        if (filter_var($email, FILTER_VALIDATE_EMAIL) === false || empty($email)){
             $validates_fields = false;
+            $msg[3]= "Your email is not correct.";
         };
+        if (empty($firstname)) {
+            $validates_fields = false;
+            $msg[0] = "Your first name is not correct.";
+        };
+        if (empty($lastname)) {
+            $validates_fields = false;
+            $msg[1] = "Your last name is not correct.";
+        }
+        if (empty($message)) {
+            $validates_fields = false;
+            $msg[4]= "Your message is not filled in.";
 
-        var_dump($validates_fields);
+        }
+        if ((isset($gender)) && ($gender !== null)) {
+            $gender1 = ($gender == "man") ? "checked" : "";
+            $gender2 = ($gender == "woman") ? "checked" : "";
+            } else {
+                $validates_fields = false;
+                $msg[2] = "The gender field is not filled in.";
+                }
+
+        //var_dump($validates_fields);
 
         if ($validates_fields === true) {
     //Instantiation and passing `true` enables exceptions
@@ -42,12 +65,12 @@
         //Content
         $mail->isHTML(true);                                  //Set email format to HTML
         $mail->Subject = 'hacker poulette';
-        $mail->Body    = 'thanks for your feedback,';
+        $mail->Body    = "Dear $firstname<br> thanks for your feedback.<br> we treat your demand as soon as possible";
         //$mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
         $mail->send();
         
-        echo 'Message has been sent';
+        //echo 'Message has been sent';
     } catch (Exception $e) {
         echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
     }
