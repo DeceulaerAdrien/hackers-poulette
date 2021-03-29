@@ -41,10 +41,10 @@
                 $validates_fields = false;
                 $msg[2] = "The gender field is not filled in.";
                 }
-                if ($_POST['website'] != "") {
-                    $validates_fields = false;
-                    echo 'Bip ?';
-                };
+        if ($_POST['website'] != "") {
+            $validates_fields = false;
+            echo 'Bip ?';
+        };
 
         //var_dump($validates_fields);
 
