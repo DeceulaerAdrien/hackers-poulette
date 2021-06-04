@@ -10,6 +10,7 @@ Un formulaire de contact créer sous PHP et SCSS
 - CSS3
 - SCSS
 - Javascript
+- PHP
 
 ### Installation
 
