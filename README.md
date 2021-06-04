@@ -27,7 +27,7 @@ démarrer votre serveur local
 
 **Dernière version stable :** 1.0
 **Dernière version :** 1.0
-Liste des versions : [Cliquer pour afficher](https://github.com/DeceulaerAdrien/Hacker-poulette/tags)
+Liste des versions : [Cliquer pour afficher](https://github.com/DeceulaerAdrien/hackers-poulette/tags)
 
 ## Déploiement
 
